@@ -86,6 +86,7 @@ const EditProduct = () => {
         });
         console.log("Product added successfully!");
         window.alert("Product updated successfully!");
+        navigate(-1);
         // setName("");
         // setDescription(""); // Changed variable name
         // setSelectedMaterials([]);

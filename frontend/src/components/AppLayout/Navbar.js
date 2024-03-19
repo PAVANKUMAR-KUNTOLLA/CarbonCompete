@@ -66,6 +66,9 @@ const Navbar = () => {
     // fetchProducts(event.target.value); // Fetch products on search term change
   
   };
+  const handleNavigateHome = () => {
+     navigate("/app/home");
+  };
 
 
   return (
@@ -78,9 +81,10 @@ const Navbar = () => {
                 <div className="flex-shrink-0">
                   <img
                     // className="h-8 w-8"
-                    style={{height:"40px",width:"141px"}}
+                    style={{height:"40px",width:"141px",cursor: "pointer"}}
                     // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                     src= {companyLogo}
+                    onClick={() => handleNavigateHome()}
                     alt="Your Company"
                   />
                 </div>
